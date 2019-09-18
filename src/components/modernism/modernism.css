@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../fonts/helvetica-75-bold-outline-587ebe00b76ba.woff') format('woff');
+}
+
+body {
+    background-color: #dcc2b1;
+}
+
+#top-background-art {
+    position: absolute;
+    width: 100vw;
+    top: 0vw;
+    z-index: -1;
+}
+
+#bottom-background-art {
+    position: absolute;
+    width: 100vw;
+    top: 58vw;
+    z-index: -1;
+}
+
+.header-text {
+    font-family: 'Helvetica Neue';
+    font-size: 3vw;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+/*-----------------------------------------*/
+
+#header-position {
+    position: absolute;
+    width: 100%;
+    top: 7.7vw;
+    z-index: 1;
+}
+
+#vhLogoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.7em;
+    text-align: center;
+    line-height: 1.2vw;
+}
+
+#eventName {
+    margin: 1.8vw 0;
+}
+
+#eventLocale {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 1.5vw;
+    letter-spacing: 0.5px;
+}
+
+/*-----------------------------------------*/
+
+#welcome-position {
+    position: absolute;
+    width: 53%;
+    top: 54vw;
+    left: 8vw;
+    z-index: 1;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5vw;
+}
+
+#welcome-header {
+    margin: 0 0 1em 0;
+}
+
+/*-----------------------------------------*/
+
+#FAQ-position {
+    position: absolute;
+    width: 46.5%; /*Do not change*/
+    top: 91vw;
+    right: 10vw;
+    z-index: 1;
+}
+
+#FAQ {
+    text-align: right;
+}
+
+/*-----------------------------------------*/
+
+#schedule-position {
+    position: absolute;
+    width: 45%;
+    top: 158vw;
+    left: 5vw;
+    z-index: 1;
+}
+
+#schedule {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5vw;
+}
+
+#schedule-header {
+    margin: 0 0 1.3em 0;
+}
+
+/*-----------------------------------------*/
+
+#sponsor-position {
+    position: absolute;
+    width: 90vw;
+    height: 35vw;
+    top: 222vw;
+    right: 10vw;
+    z-index: 0;
+}
+
+#sponsors {
+    text-align: right;
+}
+

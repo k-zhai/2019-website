@@ -1,15 +1,29 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
 const Welcome = () => {
 	return (
-		<div>
-			<h2>Welcome!</h2>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div id="welcome-position">
+			<div id="welcome">
+				<h2 className="header-text" id="welcome-header">
+					Welcome!
+				</h2>
+				<div>
+					<StaticQuery
+						query={graphql`
+							query WelcomeQuery(filter: { name: { eq: "main" }, sourceInstanceName: { eq: "content" } }) {
+								edges {
+									node {
+										childContentJson {
+											description
+										}
+									}
+								}
+							}
+						`}
+						render={data => <>{data.allContentJson.edges.node.description}</>}
+					/>
+				</div>
 			</div>
 		</div>
 	);
