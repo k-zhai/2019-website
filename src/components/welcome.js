@@ -20,7 +20,7 @@ const Welcome = () => (
 					<h2 className="header-text" id="welcome-header">
 						Welcome!
 					</h2>
-					<div id="welcome-text">{data.allContentJson.edges[1].node.description}</div>
+					<div id="welcome-text">{data.allContentJson.edges[0].node.description}</div>
 				</div>
 			</div>
 		)}
