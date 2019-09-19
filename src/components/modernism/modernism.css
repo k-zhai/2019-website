@@ -85,6 +85,13 @@ body {
     margin: 0 0 1em 0;
 }
 
+#welcome-text {
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    color: #00aeff;
+}
+
 /*-----------------------------------------*/
 
 #FAQ-position {
@@ -112,7 +119,6 @@ body {
 #schedule {
     display: flex;
     flex-direction: column;
-    line-height: 1.5vw;
 }
 
 #schedule-header {
@@ -133,4 +139,3 @@ body {
 #sponsors {
     text-align: right;
 }
-

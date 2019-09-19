@@ -9,6 +9,6 @@ const TopBackgroundArt = () => {
 
 const BottomBackgroundArt = () => {
 	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
-}
+};
 
 export { TopBackgroundArt, BottomBackgroundArt };

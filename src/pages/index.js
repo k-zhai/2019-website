@@ -1,5 +1,6 @@
 import React from 'react';
 // import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import '../components/layout.css';
 import '../components/modernism/modernism.css';
@@ -14,13 +15,13 @@ import SponsorBox from '../components/sponsorBox';
 import { TopBackgroundArt, BottomBackgroundArt } from '../components/modernism/background';
 import HeaderInfo from '../components/modernism/headerInfo';
 
-const IndexPage = () => (
-	<div>
-		<SEO title="" />
-		{
-			// insert VH logo
-		}
+const Container = styled.div`
+	width: 100%;
+	margin: 10em auto;
+`;
 
+const IndexPage = () => (
+	<Container>
 		<TopBackgroundArt />
 		<BottomBackgroundArt />
 
@@ -33,7 +34,9 @@ const IndexPage = () => (
 		<Schedule></Schedule>
 
 		<SponsorBox></SponsorBox>
-	</div>
+	</Container>
 );
 
 export default IndexPage;
+
+
