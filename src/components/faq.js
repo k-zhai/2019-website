@@ -27,6 +27,7 @@ const example = [
 	{ question: 'What is lorem?', answer: 'Ipsum' },
 	{ question: 'What is ipsum?', answer: 'Lorem' },
 ];
+
 const FAQ = () => {
 	return (
 		<div id="FAQ-position">
