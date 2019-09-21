@@ -17,18 +17,11 @@
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-react-svg": "^2.1.2",
-<<<<<<< HEAD
     "gatsby-plugin-sharp": "^2.2.24",
     "gatsby-plugin-styled-components": "^3.1.5",
     "gatsby-source-filesystem": "^2.1.24",
     "gatsby-transformer-json": "^2.2.8",
     "gatsby-transformer-sharp": "^2.2.15",
-=======
-    "gatsby-plugin-sharp": "^2.2.19",
-    "gatsby-plugin-styled-components": "^3.1.4",
-    "gatsby-source-filesystem": "^2.1.21",
-    "gatsby-transformer-sharp": "^2.2.13",
->>>>>>> 1ef4e584e6466930646a3b79432afb76a4c7d41a
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

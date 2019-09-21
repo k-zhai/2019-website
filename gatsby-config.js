@@ -24,11 +24,7 @@ module.exports = {
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-<<<<<<< HEAD
 				icon: `src/images/facicon.ico`, // This path is relative to the root of the site.
-=======
-				icon: `src/images/vhlogo.png`, // This path is relative to the root of the site.
->>>>>>> 1ef4e584e6466930646a3b79432afb76a4c7d41a
 			},
 		},
 		'gatsby-plugin-styled-components',

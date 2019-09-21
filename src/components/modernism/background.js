@@ -47,7 +47,6 @@ const BottomArtMod = () => (
 
 const BottomBackgroundArt = () => {
 	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
-<<<<<<< HEAD
 };*/
 
 const TopBackgroundArtAnimated = () => (
@@ -61,8 +60,5 @@ const BottomBackgroundArtAnimated = () => (
 		<BottomArtMod />
 	</InViewMonitor>
 );
-=======
-};
->>>>>>> 1ef4e584e6466930646a3b79432afb76a4c7d41a
 
 export { TopBackgroundArtAnimated, BottomBackgroundArtAnimated };
