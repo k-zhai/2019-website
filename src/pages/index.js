@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import '../components/layout.css';
+import '../../node_modules/animate.css/animate.min.css';
 import '../components/modernism/modernism.css';
 
 import SEO from '../components/seo';
@@ -12,7 +13,10 @@ import FAQ from '../components/faq';
 import Schedule from '../components/schedule';
 import SponsorBox from '../components/sponsorBox';
 
-import { TopBackgroundArt, BottomBackgroundArt } from '../components/modernism/background';
+import {
+	TopBackgroundArtAnimated,
+	BottomBackgroundArtAnimated,
+} from '../components/modernism/background';
 import HeaderInfo from '../components/modernism/headerInfo';
 
 const Container = styled.div`
@@ -22,9 +26,8 @@ const Container = styled.div`
 
 const IndexPage = () => (
 	<Container>
-		<TopBackgroundArt />
-		<BottomBackgroundArt />
-
+		<TopBackgroundArtAnimated />
+		<BottomBackgroundArtAnimated />
 		<HeaderInfo />
 
 		<Welcome></Welcome>

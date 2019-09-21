@@ -8,8 +8,9 @@ import HeaderShape from '../../images/modernism/HeaderShape.svg';
 import TextHeaderShapes from '../../images/modernism/TextHeaderShapes.svg';
 
 const Container = styled.div`
-	width: 76%;
-	margin: 10em auto;
+	width: 100%;
+	margin-top: 15em;
+	margin-bottom: 0em;
 `;
 
 const TopArtStyle = styled.div`
@@ -22,36 +23,42 @@ const TopArtStyle = styled.div`
 const BottomArtStyle = styled.div`
 	position: absolute;
 	width: 100vw;
-	top: 58vw;
+	top: 100vw;
 	z-index: -1;
 `;
 
 const TopArtMod = () => (
-	<Container>
-		<TopArtStyle>
-			<HeaderShape />
-		</TopArtStyle>
-	</Container>
+	<TopArtStyle>
+		<HeaderShape />
+	</TopArtStyle>
 );
 
 const BottomArtMod = () => (
-	<Container>
-		<TopArtStyle>
-			<TextHeaderShapes />
-		</TopArtStyle>
-	</Container>
+	<BottomArtStyle>
+		<TextHeaderShapes />
+	</BottomArtStyle>
 );
 
-const TopBackgroundArt = () => (
-	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInTop">
+//export { TopArtMod, BottomArtMod };
+
+/*const TopBackgroundArt = () => {
+	return <img id="top-background-art" src={HeaderShape} alt="" />;
+};
+
+const BottomBackgroundArt = () => {
+	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
+};*/
+
+const TopBackgroundArtAnimated = () => (
+	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInLeft">
 		<TopArtMod />
 	</InViewMonitor>
 );
 
-const BottomBackgroundArt = () => (
-	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInTop">
+const BottomBackgroundArtAnimated = () => (
+	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInRight">
 		<BottomArtMod />
 	</InViewMonitor>
 );
 
-export { TopBackgroundArt, BottomBackgroundArt };
+export { TopBackgroundArtAnimated, BottomBackgroundArtAnimated };
