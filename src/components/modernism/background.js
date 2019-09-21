@@ -4,8 +4,8 @@ import InViewMonitor from 'react-inview-monitor';
 //import MtSvgLines from 'react-mt-svg-lines';
 import '../../../node_modules/animate.css/animate.min.css';
 
-import HeaderShape from '../../images/modernism/HeaderShape.svg';
-import TextHeaderShapes from '../../images/modernism/TextHeaderShapes.svg';
+import HeaderShape from '../../images/HeaderShape.svg';
+import TextHeaderShapes from '../../images/TextHeaderShapes.svg';
 
 const Container = styled.div`
 	width: 100%;
@@ -47,6 +47,7 @@ const BottomArtMod = () => (
 
 const BottomBackgroundArt = () => {
 	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
+<<<<<<< HEAD
 };*/
 
 const TopBackgroundArtAnimated = () => (
@@ -60,5 +61,8 @@ const BottomBackgroundArtAnimated = () => (
 		<BottomArtMod />
 	</InViewMonitor>
 );
+=======
+};
+>>>>>>> 1ef4e584e6466930646a3b79432afb76a4c7d41a
 
 export { TopBackgroundArtAnimated, BottomBackgroundArtAnimated };

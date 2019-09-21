@@ -9,7 +9,7 @@ import '../components/modernism/modernism.css';
 import SEO from '../components/seo';
 
 import Welcome from '../components/welcome';
-import FAQ from '../components/faq';
+import FAQ from '../components/modernism/faq/faq';
 import Schedule from '../components/schedule';
 import SponsorBox from '../components/sponsorBox';
 

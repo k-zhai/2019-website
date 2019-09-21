@@ -106,6 +106,24 @@ body {
     text-align: right;
 }
 
+@keyframes up {
+    from { transform: rotate(180deg); }
+    to { transform: rotate(0deg); }
+}
+
+@keyframes down {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+.arrow-up {
+    animation: 'up' 0.3s linear forwards;
+}
+
+.arrow-down {
+    animation: 'down' 0.3s linear forwards;
+}
+
 /*-----------------------------------------*/
 
 #schedule-position {
