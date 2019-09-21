@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 
 const IndexPage = () => (
-	<Container>
+	<div>
 		<TopBackgroundArtAnimated />
 		<BottomBackgroundArtAnimated />
 		<HeaderInfo />
@@ -37,7 +37,7 @@ const IndexPage = () => (
 		<Schedule></Schedule>
 
 		<SponsorBox></SponsorBox>
-	</Container>
+	</div>
 );
 
 export default IndexPage;
