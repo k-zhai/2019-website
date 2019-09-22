@@ -19,11 +19,6 @@ import {
 } from '../components/modernism/background';
 import HeaderInfo from '../components/modernism/headerInfo';
 
-const Container = styled.div`
-	width: 100%;
-	margin: 10em auto;
-`;
-
 const IndexPage = () => (
 	<div>
 		<TopBackgroundArtAnimated />

@@ -17,15 +17,45 @@ const BottomBackgroundArt = () => {
 	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
 };*/
 
+const ContainerTop = styled.div`
+	position: absolute;
+	width: 100vw;
+	top: 0vw;
+	z-index: -1;
+`;
+
+const ContainerBottom = styled.div`
+	position: absolute;
+	width: 100vw;
+	top: 58vw;
+	z-index: -1;
+`;
+
+const TopBackground = () => {
+	return (
+		<ContainerTop>
+			<HeaderShape />
+		</ContainerTop>
+	);
+};
+
+const BottomBackground = () => {
+	return (
+		<ContainerBottom>
+			<TextHeaderShapes />
+		</ContainerBottom>
+	);
+};
+
 const TopBackgroundArtAnimated = () => (
 	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInLeft">
-		<HeaderShape />
+		<TopBackground />
 	</InViewMonitor>
 );
 
 const BottomBackgroundArtAnimated = () => (
 	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInRight">
-		<TextHeaderShapes />
+		<BottomBackground />
 	</InViewMonitor>
 );
 
