@@ -35,10 +35,4 @@ const HeaderInfo = () => {
 	);
 };
 
-const ScrollAnimate = ({ SvgElement }) => (
-	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInLeft">
-		{SvgElement}
-	</InViewMonitor>
-);
-
 export default HeaderInfo;

@@ -7,6 +7,8 @@ import '../../../node_modules/animate.css/animate.min.css';
 import HeaderShape from '../../images/HeaderShape.svg';
 import TextHeaderShapes from '../../images/TextHeaderShapes.svg';
 
+import Img from 'react-image';
+
 //export { TopArtMod, BottomArtMod };
 
 /*const TopBackgroundArt = () => {
@@ -17,46 +19,38 @@ const BottomBackgroundArt = () => {
 	return <img id="bottom-background-art" src={TextHeaderShapes} alt="" />;
 };*/
 
-const ContainerTop = styled.div`
-	position: absolute;
-	width: 100vw;
-	top: 0vw;
-	z-index: -1;
-`;
+const svgStyle = {
+	position: 'relative',
+	width: '100vw',
+	top: '-10vw',
+	zIndex: '0',
+};
 
-const ContainerBottom = styled.div`
-	position: absolute;
-	width: 100vw;
-	top: 58vw;
-	z-index: -1;
-`;
+const svgStyle2 = {
+	position: 'relative',
+	width: '100vw',
+	top: '-40vw',
+	zIndex: '0',
+};
 
 const TopBackground = () => {
-	return (
-		<ContainerTop>
-			<HeaderShape />
-		</ContainerTop>
-	);
+	return <HeaderShape style={svgStyle} />;
 };
 
 const BottomBackground = () => {
-	return (
-		<ContainerBottom>
-			<TextHeaderShapes />
-		</ContainerBottom>
-	);
+	return <TextHeaderShapes style={svgStyle2} />;
 };
 
-const TopBackgroundArtAnimated = () => (
-	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInLeft">
+/*const TopBackgroundArtAnimated = () => (
+	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rollIn">
 		<TopBackground />
 	</InViewMonitor>
-);
+);*/
 
 const BottomBackgroundArtAnimated = () => (
-	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated fadeInRight">
+	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rotateIn">
 		<BottomBackground />
 	</InViewMonitor>
 );
 
-export { TopBackgroundArtAnimated, BottomBackgroundArtAnimated };
+export { TopBackground, BottomBackgroundArtAnimated };

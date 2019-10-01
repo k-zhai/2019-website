@@ -12,18 +12,36 @@ import FAQ from '../components/modernism/faq/faq';
 import Schedule from '../components/schedule';
 import SponsorBox from '../components/sponsorBox';
 
-import {
-	TopBackgroundArtAnimated,
-	BottomBackgroundArtAnimated,
-} from '../components/modernism/background';
+import InViewMonitor from 'react-inview-monitor';
+
+import { TopBackground, BottomBackgroundArtAnimated } from '../components/modernism/background';
 import HeaderInfo from '../components/modernism/headerInfo';
+
+const Container = styled.div`
+	position: 'relative',
+	width: '0vw',
+	zIndex: '0',
+`;
+
+const TopPage = () => {
+	return (
+		<Container>
+			<TopBackground />
+			<HeaderInfo />
+		</Container>
+	);
+};
+
+const TopPageAnimated = () => (
+	<InViewMonitor classNameNotInView="vis-hidden" classNameInView="animated rollIn">
+		<TopPage />
+	</InViewMonitor>
+);
 
 const IndexPage = () => (
 	<div>
-		<TopBackgroundArtAnimated />
+		<TopPageAnimated />
 		<BottomBackgroundArtAnimated />
-		<HeaderInfo />
-
 		<Welcome></Welcome>
 
 		<FAQ></FAQ>

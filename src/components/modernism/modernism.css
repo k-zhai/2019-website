@@ -22,7 +22,8 @@ body {
 }
 
 .header-text {
-    font-family: 'Helvetica Neue';
+    font-family: 'HelveticaNeue';
+    font-weight: 'bold';
     font-size: 3vw;
     letter-spacing: 0.2em;
     color: #ffffff;
@@ -31,10 +32,10 @@ body {
 /*-----------------------------------------*/
 
 #header-position {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 7.5vw;
-    z-index: 1;
+    top: -50vw;
+    z-index: 3;
 }
 
 #vhLogoContainer {
