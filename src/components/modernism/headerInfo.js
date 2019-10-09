@@ -1,6 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import InViewMonitor from 'react-inview-monitor';
+import MtSvgLines from 'react-mt-svg-lines';
 
 const HeaderInfo = () => {
 	const style = {
@@ -23,7 +26,7 @@ const HeaderInfo = () => {
 				<Img style={style} fluid={data.fileName.childImageSharp.fluid} />
 				<div id="eventInfo">
 					<div className="header-text" id="eventName">
-						VandyHacks VI
+						VandyHacks VI: Art Edition
 					</div>
 					<div id="eventLocale">Nov 1-3, 2019 • Nashville, TN </div>
 				</div>
